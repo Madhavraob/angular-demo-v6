@@ -1,0 +1,25 @@
+<!--The whole content below can be removed with the new code.-->
+<!-- <div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!!
+  </h1>
+</div>
+<router-outlet></router-outlet>
+ -->
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Angular Demo</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a routerLink="/home" routerLinkActive="active">Home </a></li>
+      <li><a routerLink="/directives" routerLinkActive="active">Users</a></li>
+      <li style="float: right;clear: right;">LogOut</li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,12 @@
+<div class="container" [ngClass]="applyBaground ? 'user-baground': ''" [ngStyle]="{ 'color': applyBaground?'brown':''}">
+  <div class="jumbotron">
+    <h2>This is user list </h2>
+    <ul *ngFor="let user of useList">
+      <li>
+        <h2><a routerLink='/roteparams/{{user.id}}'>{{user.name | capPipe}}</a></h2>
+        <hr>
+      </li>
+    </ul>
+  </div>
+  <router-outlet></router-outlet>
+</div>
